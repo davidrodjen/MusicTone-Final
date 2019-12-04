@@ -15,9 +15,15 @@
       <tone-keyboard octaves="2"></tone-keyboard>
     </tone-demo>
 
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+    <tone autoplay>
+      <tone-keyboard octaves="3"></tone-keyboard>
+    </tone>
+
+    <!-- The script below doesn't seem necessary -->
+    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script> -->
     <script src="https://unpkg.com/tone"></script>
     <script src="https://unpkg.com/@tonejs/ui"></script>
+    <!-- The musicTone file sets the sounds of the keys -->
     <script src="scripts/musictone.js"></script>
 
     https://dev.to/shimphillip/building-a-piano-with-tone-js-5c2f
