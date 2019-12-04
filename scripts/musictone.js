@@ -33,3 +33,13 @@ document.querySelector('tone-keyboard').addEventListener('noteon', e => {
 document.querySelector('tone-keyboard').addEventListener('noteoff', e => {
   synth.triggerRelease()
 })
+
+// const piano = new Tone.FMSynth().ToMaster()
+
+// document.querySelector('tone-keyboard').addEventListener('noteon', f => {
+//   piano.triggerAttack(f.detail.name)
+// })
+
+// document.querySelector('tone-keyboard').addEventListener('noteoff', f => {
+//   piano.triggerRelease()
+// })
