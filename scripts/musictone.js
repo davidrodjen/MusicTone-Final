@@ -26,6 +26,7 @@
 //.toMaster connects it to the speakers
 const synth = new Tone.AMSynth().toMaster()
 
+
 // synth.triggerAttackRelease('C4', '8n');
 // const notes = [
 //   'C4', 'E4', 'G4',
