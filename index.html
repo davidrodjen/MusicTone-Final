@@ -5,16 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <script src="css/musictone.css"></script>
+    <link rel="stylesheet" href="css/musictone.css">
+    <script src="https://tonejs.github.io/build/Tone.min.js"></script>
+    
     <title>Music Compendium</title>
 </head>
 <body>
+
+  
     <h2>Welcome to David's Wonderful Musical Compendium</h2>
     <!-- <script src="scripts/musictone.js"></script>
     <script src="scripts/Tone/index.js"></script> -->
     <!-- <tone-demo autoplay>
       <tone-keyboard octaves="4"></tone-keyboard>
     </tone-demo> -->
+
+
+    <ul id="piano">
+      <li data-note="C4" class="key">
+        <div data-note="C#4" class="black-key">R</div>
+        D
+      </li>
+      <li data-note="D4" class="key">
+        <div data-note="D#4" class="black-key">T</div>
+        F
+      </li>
+      <li data-note="E4" class="key">
+        G
+      </li>
+      <li data-note="F4" class="key">
+        <div data-note="F#4" class="black-key">U</div>
+        H
+      </li>
+      <li data-note="G4" class="key">
+        <div data-note="G#4" class="black-key">I</div>
+        J
+      </li>
+      <li data-note="A4" class="key">
+        <div data-note="A#4" class="black-key">O</div>
+        K
+      </li>
+      <li data-note="B4" class="key">
+        L
+      </li>
+    </ul>
 
     <tone autoplay>
       <tone-keyboard octaves="4"></tone-keyboard>
@@ -31,13 +65,17 @@
     </tone> -->
 
     <!-- The script below doesn't seem necessary -->
-    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script> -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
     <script src="https://unpkg.com/tone"></script>
     <script src="https://unpkg.com/@tonejs/ui"></script>
     <!-- The musicTone file sets the sounds of the keys -->
-    <script src="scripts/musictone.js"></script>
+    <!-- <script src="scripts/musictone.js"></script>
     <script src="scripts/Tone/index.js"></script>
-    <script src="scripts/Tone/core/Tone.js"></script>
+    <script src="scripts/Tone/core/Tone.js"></script> -->
+<!-- 
+    <script src="scripts/tone/instrument/Synth.js"></script>
+    <script src="scripts/Tone/source/OmniOscillator.js"></script>"
+    <script src="scripts/tone/component/AmplitudeEnvelope.js"></script> -->
     
     <!-- https://dev.to/shimphillip/building-a-piano-with-tone-js-5c2f -->
 
