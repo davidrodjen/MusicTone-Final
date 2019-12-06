@@ -1,4 +1,4 @@
-const synth = new tone.Synth();
+const synth = new Tone.Synth();
 synth.oscillator.type = "sine";
 synth.toMaster();
 
