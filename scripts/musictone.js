@@ -1,4 +1,4 @@
-const synth = new Tone.Synth();
+const synth = new tone.Synth();
 synth.oscillator.type = "sine";
 synth.toMaster();
 
@@ -61,7 +61,7 @@ document.addEventListener("keyup", e => {
   }
 });
 
-// var synth = new webkitConvertPointFromPageToNode.Synth().toMaster()
+ //var synth = new webkitConvertPointFromPageToNode.Synth().toMaster()
 
 // synth.triggerAttackRelease('C4', '8n')
 
@@ -118,13 +118,13 @@ document.addEventListener("keyup", e => {
 
 ///////////////////////////
 //attach a listener to the keyboard events
-// document.querySelector('tone-keyboard').addEventListener('noteon', e => {
-//   synth.triggerAttack(e.detail.name)
-// })
+document.querySelector('piano').addEventListener('noteon', e => {
+  synth.triggerAttack(e.detail.name)
+})
 
-// document.querySelector('tone-keyboard').addEventListener('noteoff', e => {
-//   synth.triggerRelease()
-// })
+document.querySelector('piano').addEventListener('noteoff', e => {
+  synth.triggerRelease()
+})
 ////////////////////////
 // const piano = new Tone.FMSynth().ToMaster()
 
